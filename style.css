@@ -1,0 +1,133 @@
+:root {
+    --primary-blue: #1b263b;
+    --accent-blue: #415a77;
+    --highlight-blue: #0077b6;
+    --light-gray: #e9ecef;
+    --white: #ffffff;
+    --text-main: #212529;
+}
+
+* {
+    margin: 0; padding: 0; box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body { background-color: var(--light-gray); color: var(--text-main); }
+
+nav {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 15px 8%; background: var(--primary-blue);
+    position: sticky; top: 0; z-index: 1000; box-shadow: 0 4px 10px rgba(0,0,0,0.1);width: 100%;
+}
+/* Service Card Images */
+.bike-img {
+    background-image: url('bi.jpg');
+}
+.logooo{
+    text-decoration: none;
+}
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a {
+    width: 32px;
+    height: 32px;
+    background: wheat;
+    color: var(--primary-blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 18px;
+    transition: 0.5s ease-in-out;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    transform:scale(1.1);
+}
+
+/* Brand colors on hover */
+.social-icons .whatsapp:hover {
+    background: #25D366;
+    color: white;
+}
+
+.social-icons .instagram:hover {
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+    color: white;
+}
+
+.social-icons .youtube:hover {
+    background: #FF0000;
+    color: white;
+}
+
+.car-img {
+    background-image: url('ex.jpg');
+}
+
+.interior-img {
+    background-image: url('in.jpg');
+}
+/* .logo { font-family: 'Playfair Display', serif; font-size: 30px; font-weight: bold; color: var(--white); letter-spacing: 2px; } */
+.logo span { color: var(--highlight-blue); }
+.logo { 
+    font-family: 'Michroma', sans-serif;
+    font-size: 30px;
+    letter-spacing: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #dee2e6;
+}
+.nav-links { list-style: none; display: flex; }
+.nav-links li { margin: 0 15px; }
+.nav-links a { text-decoration: none; color: var(--light-gray); font-size: 14px; text-transform: uppercase; }
+
+.hero {
+    height: 85vh;
+    background: linear-gradient(rgba(13, 27, 42, 0.7), rgba(13, 27, 42, 0.7)), 
+                url('https://images.unsplash.com/photo-1520340356584-f9917d1eea6f?auto=format&fit=crop&w=1500&q=80');
+    background-size: cover; background-position: center;
+    display: flex; align-items: center; justify-content: center; text-align: center; color: white;
+}
+.hero-btns{margin-top: 40px;}
+.hero h1 { font-family: 'Playfair Display', serif; font-size: 4rem; }
+.hero h1 span { color: var(--highlight-blue); }
+.tagline { color: var(--highlight-blue); letter-spacing: 4px; text-transform: uppercase; font-weight: bold; }
+
+.btn-main {
+    background: var(--highlight-blue); color: var(--white); padding: 12px 30px;
+    border-radius: 5px; text-decoration: none; font-weight: bold; border: none; cursor: pointer; transition: 0.3s;
+    
+}
+.btn-main:hover { background: var(--white); color: var(--highlight-blue); }
+
+.btn-whatsapp { background:#BA8E23; color: rgb(0, 0, 0); padding: 10px 20px; text-decoration: none; border-radius: 5px; font-weight: bold; }
+.btn-whatsapp:hover{background-color: #ddd; transition: 0.4s ease-in-out; color: #0d1b2a;}
+.services { padding: 80px 8%; text-align: center; }
+.section-title { font-family: 'Playfair Display', serif; font-size: 36px; margin-bottom: 50px; color: var(--primary-blue); }
+
+.service-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+.s-card { background: var(--white); border-radius: 15px; overflow: hidden; box-shadow: 0 10px 25px rgba(0,0,0,0.05); transition: 0.3s; }
+.s-card:hover { transform: translateY(-10px); }
+
+.s-img { height: 220px; background-size: cover; background-position: center; background-color: #ddd; }
+
+.s-info { padding: 25px; }
+.price {  display: block; margin-top: 15px; font-weight: bold; color: var(--highlight-blue); font-size: 1.3rem; }
+
+.contact { padding: 80px 8%; background: var(--primary-blue); color: white; text-align: center; }
+.contact-container { max-width: 600px; margin: 0 auto; }
+
+form { margin-top: 30px; display: flex; flex-direction: column; gap: 15px; }
+form input, form select { 
+    padding: 15px; border-radius: 5px; border: 1px solid #dee2e6; 
+    font-size: 16px; outline: none;
+}
+form select { background-color: white; cursor: pointer; }
+
+footer { padding: 50px; text-align: center; background: #0d1b2a; color: var(--light-gray); }
